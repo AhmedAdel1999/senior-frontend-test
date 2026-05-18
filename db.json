@@ -1,0 +1,60 @@
+{
+  "users": [
+    { "id": "1", "name": "Alice Martin", "role": "USER" },
+    { "id": "2", "name": "Bob Reviewer", "role": "REVIEWER" },
+    { "id": "3", "name": "Carol Admin", "role": "ADMIN" }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "title": "Fix login bug on mobile",
+      "description": "Login fails randomly on mobile devices when using Safari browser. Needs investigation into token expiry handling.",
+      "status": "SUBMITTED",
+      "createdBy": "1",
+      "assignedToRole": "REVIEWER",
+      "createdAt": "2026-04-28T10:00:00.000Z",
+      "updatedAt": "2026-04-28T12:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "title": "Redesign dashboard layout",
+      "description": "The current dashboard is cluttered. We need a cleaner layout with better widget organization and responsive support.",
+      "status": "DRAFT",
+      "createdBy": "1",
+      "assignedToRole": "USER",
+      "createdAt": "2026-05-01T09:00:00.000Z",
+      "updatedAt": "2026-05-01T09:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "title": "Add export to CSV feature",
+      "description": "Users need to export their task reports as CSV files for use in Excel and other spreadsheet tools.",
+      "status": "REVIEWED",
+      "createdBy": "1",
+      "assignedToRole": "ADMIN",
+      "createdAt": "2026-04-20T08:00:00.000Z",
+      "updatedAt": "2026-05-05T14:00:00.000Z"
+    },
+    {
+      "id": "t4",
+      "title": "Optimize image loading pipeline",
+      "description": "Images are loading too slowly. Implement lazy loading, WebP conversion, and CDN integration for improved performance.",
+      "status": "APPROVED",
+      "createdBy": "1",
+      "assignedToRole": "ADMIN",
+      "createdAt": "2026-04-10T11:00:00.000Z",
+      "updatedAt": "2026-05-10T09:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "title": "Fix broken email notifications",
+      "description": "Email notifications are not being sent when tasks are updated. The SMTP configuration may be misconfigured.",
+      "status": "REJECTED",
+      "createdBy": "1",
+      "assignedToRole": "USER",
+      "createdAt": "2026-04-15T13:00:00.000Z",
+      "updatedAt": "2026-04-18T10:00:00.000Z",
+      "rejectionReason": "This task is out of scope for the current sprint. Please re-submit with a detailed SMTP audit report attached."
+    }
+  ]
+}
